@@ -30,17 +30,17 @@ function antum.log(level, mod, message)
 	minetest.log(level, '[' .. mod .. '] ' .. message)
 end
 
-function antum.log_action(mod, message)
+function antum.logAction(mod, message)
 	antum.log('action', mod, message)
 end
 
-function antum.log_warn(mod, message)
+function antum.logWarn(mod, message)
 	antum.log('warning', mod, message)
 end
 
 
 -- Checks if a file exists
-function antum.file_exists(file_path)
+function antum.fileExists(file_path)
 	local fexists = io.open(file_path, 'r')
 	
 	if fexists == nil then
@@ -53,17 +53,17 @@ end
 
 
 -- Loads a mod sub-script
-function antum.load_script(mod_path, script_name)
+function antum.loadScript(mod_path, script_name)
 	local script = mod_path .. '/' .. script_name .. '.lua'
 	
-	if antum.file_exists(script) then
+	if antum.fileExists(script) then
 		dofile(script)
 	end
 end
 
 
 -- Registers a craft & displays a log message
-function antum.register_craft(craft)
-	antum.log_action(minetest.get_current_modname(), 'Registering craft recipe for "' .. craft.output .. '"')
+function antum.registerCraft(craft)
+	antum.logAction(minetest.get_current_modname(), 'Registering craft recipe for "' .. craft.output .. '"')
 	minetest.register_craft(craft)
 end

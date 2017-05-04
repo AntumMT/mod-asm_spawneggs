@@ -57,7 +57,7 @@ antum.spawneggs.addEgg = function(name, spawn, ingredients)
 	antum.spawneggs.addEggRecipe(name, spawn, ingredients)
 	
 	-- DEBUG
-	antum.log_action(antum.spawneggs.modname, 'Registered spawnegg for ' .. spawn)
+	antum.logAction(antum.spawneggs.modname, 'Registered spawnegg for ' .. spawn)
 end
 
 
