@@ -59,7 +59,7 @@ if bags.satisfied then
 		},
 	})
 	
-	minetest.register_craft({
+	antum.register_craft({
 		output = 'bags:small',
 		recipe = {
 			{'', 'group:stick', '',},
@@ -67,7 +67,7 @@ if bags.satisfied then
 			{'group:fur', 'group:fur', 'group:fur',},
 		}
 	})
-	minetest.register_craft({
+	antum.register_craft({
 		output = 'bags:medium',
 		recipe = {
 			{'bags:small', 'bags:small',},
@@ -75,7 +75,7 @@ if bags.satisfied then
 			{'bags:small', 'bags:small',},
 		}
 	})
-	minetest.register_craft({
+	antum.register_craft({
 		output = 'bags:large',
 		recipe = {
 			{'bags:medium', 'bags:medium',},

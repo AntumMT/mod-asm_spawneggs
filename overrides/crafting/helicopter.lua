@@ -27,7 +27,7 @@
 
 antum.clearCraftOutput("helicopter:cabin")
 
-minetest.register_craft({
+antum.register_craft({
 	output = 'helicopter:cabin',
 	recipe = {
 		{'', 'group:wood', ''},

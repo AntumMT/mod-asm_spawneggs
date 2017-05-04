@@ -37,7 +37,7 @@ for I in pairs(depends) do
 end
 
 if depends_satisfied then
-	minetest.register_craft({
+	antum.register_craft({
 		output = 'carts:powerrail',
 		type = 'shapeless',
 		recipe = {

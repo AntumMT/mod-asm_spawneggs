@@ -32,7 +32,7 @@ local registerCWoodCraft = function(color)
 		return
 	end
 	
-	minetest.register_craft({
+	antum.register_craft({
 		type = 'shapeless',
 		output = 'coloredwood:wood_' .. color,
 		recipe = {

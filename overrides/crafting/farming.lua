@@ -38,7 +38,7 @@ end
 
 if cotton.dependencies.satisfied then
 	-- Craft cotton from white wool
-	minetest.register_craft({
+	antum.register_craft({
 		output = "farming:cotton 4",
 		type = "shapeless",
 		recipe = {"wool:white"},

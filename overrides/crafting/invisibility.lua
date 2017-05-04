@@ -106,7 +106,7 @@ if depends_satisfied then
 	})--]]
 	
 	
-	minetest.register_craft({
+	antum.register_craft({
 		output = 'invisibility:potion',
 		type = 'shapeless',
 		recipe = {
