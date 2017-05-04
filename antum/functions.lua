@@ -60,3 +60,10 @@ function antum.load_script(mod_path, script_name)
 		dofile(script)
 	end
 end
+
+
+-- Registers a craft & displays a log message
+function antum.register_craft(mod, craft)
+	antum.log_action(mod, 'Registering craft recipe for "' .. craft.output .. '"')
+	minetest.register_craft(craft)
+end
