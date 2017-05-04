@@ -48,7 +48,6 @@ function antum.fileExists(file_path)
 	local fexists = io.open(file_path, 'r')
 	
 	if fexists == nil then
-		antum.logError('Could not load script: ' .. file_path)
 		return false
 	end
 	
@@ -68,6 +67,8 @@ function antum.loadScript(mod_path, script_name)
 	
 	if antum.fileExists(script) then
 		dofile(script)
+	else
+		antum.logError('Could not load, script does not exists: ' .. script)
 	end
 end
 
