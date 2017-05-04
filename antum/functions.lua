@@ -73,6 +73,14 @@ function antum.loadScript(script_name)
 end
 
 
+-- Loads multiple mod sub-scripts
+function antum.loadScripts(script_list)
+	for I in pairs(script_list) do
+		antum.loadScript(script_list[I])
+	end
+end
+
+
 -- Registers a craft & displays a log message
 function antum.registerCraft(craft)
 	antum.logAction('Registering craft recipe for "' .. craft.output .. '"')
