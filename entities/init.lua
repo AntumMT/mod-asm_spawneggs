@@ -30,13 +30,8 @@ antum.entities.modname = minetest.get_current_modname()
 antum.entities.modpath = minetest.get_modpath(antum.entities.modname)
 
 
-local function logAction(message)
-	minetest.log('action', '[' .. antum.entities.modname .. '] ' .. message)
-end
-
-
 -- Loading entity definitions
-logAction('Loading entity definitions ...')
+antum.logAction('Loading entity definitions ...')
 
 antum.def = {}
 local defs = {
@@ -49,7 +44,7 @@ end
 
 
 -- Loading entity types
-logAction('Loading entity types ...')
+antum.logAction('Loading entity types ...')
 local types = {
 	'hostile', 'peaceful', 'npc',
 }
