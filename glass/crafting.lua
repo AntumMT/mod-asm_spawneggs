@@ -28,7 +28,7 @@
 for I in pairs(antum.glass.colors) do
 	local color = antum.glass.colors[I]
 	
-	minetest.register_craft({
+	antum.register_craft({
 		output = 'glass:' .. color,
 		type = 'shapeless',
 		recipe = {'default:glass', 'dye:' .. color},
