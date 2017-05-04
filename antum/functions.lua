@@ -26,20 +26,20 @@
 
 
 -- Displays a message in the log
-function antum.log(level, mod, message)
-	minetest.log(level, '[' .. mod .. '] ' .. message)
+function antum.log(level, message)
+	minetest.log(level, '[' .. minetest.get_current_modname() .. '] ' .. message)
 end
 
-function antum.logAction(mod, message)
-	antum.log('action', mod, message)
+function antum.logAction(message)
+	antum.log('action', message)
 end
 
-function antum.logWarn(mod, message)
-	antum.log('warning', mod, message)
+function antum.logWarn(message)
+	antum.log('warning', message)
 end
 
 function antum.logError(message)
-	antum.log('error', minetest.get_current_modname(), message)
+	antum.log('error', message)
 end
 
 
@@ -75,6 +75,6 @@ end
 
 -- Registers a craft & displays a log message
 function antum.registerCraft(craft)
-	antum.logAction(minetest.get_current_modname(), 'Registering craft recipe for "' .. craft.output .. '"')
+	antum.logAction('Registering craft recipe for "' .. craft.output .. '"')
 	minetest.register_craft(craft)
 end
