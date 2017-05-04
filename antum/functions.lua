@@ -52,6 +52,12 @@ function antum.fileExists(file_path)
 end
 
 
+-- Retrieves path for currently loaded mod
+function antum.getCurrentModPath()
+	return minetest.get_modpath(minetest.get_current_modname())
+end
+
+
 -- Loads a mod sub-script
 function antum.loadScript(mod_path, script_name)
 	local script = mod_path .. '/' .. script_name .. '.lua'
