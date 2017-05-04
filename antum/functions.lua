@@ -38,13 +38,17 @@ function antum.logWarn(mod, message)
 	antum.log('warning', mod, message)
 end
 
+function antum.logError(message)
+	antum.log('error', minetest.get_current_modname(), message)
+end
+
 
 -- Checks if a file exists
 function antum.fileExists(file_path)
 	local fexists = io.open(file_path, 'r')
 	
 	if fexists == nil then
-		minetest.log('error', '[' .. antum.modname .. '] Could not load script: ' .. file_path)
+		antum.logError('Could not load script: ' .. file_path)
 		return false
 	end
 	
