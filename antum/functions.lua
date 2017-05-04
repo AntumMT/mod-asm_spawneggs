@@ -62,8 +62,8 @@ end
 
 
 -- Loads a mod sub-script
-function antum.loadScript(mod_path, script_name)
-	local script = mod_path .. '/' .. script_name .. '.lua'
+function antum.loadScript(script_name)
+	local script = antum.getCurrentModPath() .. '/' .. script_name .. '.lua'
 	
 	if antum.fileExists(script) then
 		dofile(script)

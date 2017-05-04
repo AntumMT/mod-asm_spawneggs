@@ -38,5 +38,5 @@ local scripts = {
 }
 
 for I in pairs(scripts) do
-	antum.loadScript(antum.craft.modpath, scripts[I])
+	antum.loadScript(scripts[I])
 end
