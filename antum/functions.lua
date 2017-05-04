@@ -63,7 +63,7 @@ end
 
 
 -- Registers a craft & displays a log message
-function antum.register_craft(mod, craft)
-	antum.log_action(mod, 'Registering craft recipe for "' .. craft.output .. '"')
+function antum.register_craft(craft)
+	antum.log_action(minetest.get_current_modname(), 'Registering craft recipe for "' .. craft.output .. '"')
 	minetest.register_craft(craft)
 end
