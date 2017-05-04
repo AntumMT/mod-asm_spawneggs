@@ -26,7 +26,7 @@
 
 
 -- Nyan cat blocks
-minetest.register_craft({
+antum.register_craft({
 	output = "default:nyancat_rainbow",
 	recipe = {
 		{'', 'dye:red', '',},
@@ -37,7 +37,7 @@ minetest.register_craft({
 
 
 -- Walking light items
-minetest.register_craft({
+antum.register_craft({
 	output = 'walking_light:helmet_gold',
 	recipe = {
 		{'default:torch'},
