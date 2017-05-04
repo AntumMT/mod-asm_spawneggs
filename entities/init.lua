@@ -39,7 +39,7 @@ local defs = {
 }
 
 for I in pairs(defs) do
-	dofile(antum.entities.modpath .. '/definitions/' .. defs[I] .. '.lua')
+	antum.loadScript('definitions/' .. defs[I])
 end
 
 
@@ -50,5 +50,5 @@ local types = {
 }
 
 for I in pairs(types) do
-	dofile(antum.entities.modpath .. '/types/' .. types[I] .. '.lua')
+	antum.loadScript('types/' .. types[I])
 end

@@ -56,8 +56,6 @@ antum.clearCraftRecipe = function(r)
 	})
 end
 
-local craftdir = antum.overrides.modpath .. '/crafting'
-
 local modoverrides = {
 	'bags',
 	'carts',
@@ -74,6 +72,6 @@ for I in pairs(modoverrides) do
 	local modname = modoverrides[I]
 	if minetest.get_modpath(modname) then
 		antum.logAction('DEBUG: found mod \"' .. modname .. '\"')
-		dofile(craftdir .. '/' .. modname .. '.lua')
+		antum.loadScript('crafting/' .. modname)
 	end
 end
