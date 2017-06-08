@@ -92,11 +92,6 @@ if minetest.get_modpath('chicken') then
 	antum.spawneggs.addEgg('chicken', 'creatures:chicken', {'creatures:feather'})
 end
 
--- Cow spawnegg
-if minetest.get_modpath('kpgmobs') and minetest.get_modpath('mobs') then
-	antum.spawneggs.addEgg('cow', 'kpgmobs:cow', {'mobs:leather'})
-end
-
 -- mobs_redo monsters
 if minetest.get_modpath('mobs_monster') and minetest.get_modpath('default') then
 	
