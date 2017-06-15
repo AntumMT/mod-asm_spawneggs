@@ -1,3 +1,0 @@
-A very basic chat command to list all registered craft items availabe in the game.
-
-Use the command "/listitems" (no privileges required).
