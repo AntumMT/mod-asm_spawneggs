@@ -131,6 +131,20 @@ function antum.clearCraftRecipe(recipe)
 end
 
 
+-- Overrides a previously registered craft using output
+function antum.overrideCraftOutput(def)
+	antum.clearCraftOutput(def.output)
+	antum.registerCraft(def)
+end
+
+
+-- Overrides a previously registered craft using recipe
+function antum.overrideCraftRecipe(def)
+	antum.clearCraftRecipe(def.replace)
+	antum.registerCraft(def)
+end
+
+
 -- Checks if dependencies are satisfied
 function antum.dependsSatisfied(depends)
 	for index, dep in ipairs(depends) do
