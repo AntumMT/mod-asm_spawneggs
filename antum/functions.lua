@@ -91,6 +91,46 @@ function antum.registerCraft(craft)
 end
 
 
+-- De-registers a craft by output
+function antum.clearCraftOutput(output)
+	if antum.verbose then
+		antum.logAction('Clearing craft by output: ' .. output)
+	end
+	
+	minetest.clear_craft({
+		output = output
+	})
+end
+
+
+-- De-registers craft by recipe
+function antum.clearCraftRecipe(recipe)
+	if antum.verbose then
+		local recipe_string = ''
+		local icount = 0
+		for I in pairs(recipe) do
+			icount = icount + 1
+		end
+		
+		for I in pairs(recipe) do
+			if I == icount then
+				recipe_string = recipe_string .. ' ' .. recipe[I]
+			elseif I > 1 then
+				recipe_string = recipe_string .. ' + ' .. recipe[I]
+			else
+				recipe_string = recipe[I]
+			end
+		end
+		
+		antum.logAction(' Clearing craft by recipe: ' .. recipe_string)
+	end
+	
+	minetest.clear_craft({
+		recipe = {recipe}
+	})
+end
+
+
 -- Checks if dependencies are satisfied
 function antum.dependsSatisfied(depends)
 	for index, dep in ipairs(depends) do
