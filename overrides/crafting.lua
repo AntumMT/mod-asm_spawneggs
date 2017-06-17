@@ -37,10 +37,12 @@ local modoverrides = {
 --	'temp-removals',
 }
 
-for I in pairs(modoverrides) do
-	local modname = modoverrides[I]
+for index, modname in ipairs(modoverrides) do
 	if minetest.get_modpath(modname) then
-		antum.logAction('DEBUG: found mod \"' .. modname .. '\"')
+		if antum.verbose then
+			antum.logAction('DEBUG: found mod \"' .. modname .. '\"')
+		end
+		
 		antum.loadScript('crafting/' .. modname)
 	end
 end
