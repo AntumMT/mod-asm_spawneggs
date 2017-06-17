@@ -83,7 +83,10 @@ end
 
 -- Registers a craft & displays a log message
 function antum.registerCraft(craft)
-	antum.logAction('Registering craft recipe for "' .. craft.output .. '"')
+	if antum.verbose then
+		antum.logAction('Registering craft recipe for "' .. craft.output .. '"')
+	end
+	
 	minetest.register_craft(craft)
 end
 
