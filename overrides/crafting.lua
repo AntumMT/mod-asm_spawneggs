@@ -28,7 +28,6 @@
 local modoverrides = {
 	'bags',
 	'carts',
-	'coloredwood',
 	'craftguide',
 	'dye',
 	'farming',
