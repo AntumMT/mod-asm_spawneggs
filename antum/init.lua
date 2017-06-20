@@ -36,7 +36,7 @@ end
 
 
 local scripts = {
-	'functions',
+	'api',
 	'items',
 	'crafting',
 }
