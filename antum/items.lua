@@ -25,6 +25,15 @@
 --]]
 
 
+-- Feather
+minetest.register_craftitem('antum:feather', {
+	description = 'Feather',
+	inventory_image = 'antum_feather_white.png',
+	groups = {'feather'},
+})
+minetest.register_alias('antum:feather_white', 'antum:feather')
+
+
 local depends_satisfied = true
 
 local depends = {
