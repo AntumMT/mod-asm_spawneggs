@@ -61,9 +61,26 @@ function antum.getCurrentModPath()
 end
 
 
--- Loads a mod sub-script
-function antum.loadScript(script_name)
-	local script = antum.getCurrentModPath() .. '/' .. script_name .. '.lua'
+--[[
+  Loads a mod sub-script.
+  
+  @param script_name
+    Name or base name of the script file
+  @param lua_ext
+    type: bool
+    default: true
+    description: If 'true', appends '.lua' extension to script filename
+]]--
+function antum.loadScript(script_name, lua_ext)
+	-- Default 'true'
+	if lua_ext == nil then
+		lua_ext = true
+	end
+	
+	local script = antum.getCurrentModPath() .. '/' .. script_name
+	if lua_ext then
+		script = script .. '.lua'
+	end
 	
 	if antum.fileExists(script) then
 		dofile(script)
