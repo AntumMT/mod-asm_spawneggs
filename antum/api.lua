@@ -172,3 +172,37 @@ function antum.dependsSatisfied(depends)
 	
 	return true
 end
+
+
+--[[
+  Retrieves a list of items containing a string.
+  
+  @param substring
+    String to match within item names
+  @param case_sensitive
+    If 'true', 'substring' case must match that of item name
+  @return
+    List of item names matching 'substring'
+]]--
+function antum.getItemNames(substring, case_sensitive)
+	-- Convert to lowercase
+	if not case_sensitive then
+		substring = string.lower(substring)
+	end
+	
+	local item_names = {}
+	
+	for index, item in minetest.registered_items do
+		local item_name = item.name
+		if not case_sensitive then
+			item_name = string.lower(item_name)
+		end
+		
+		-- Check item name for substring
+		if string.find(item_name, substring) then
+			table.insert(item_names, item_name)
+		end
+	end
+	
+	return item_names
+end
