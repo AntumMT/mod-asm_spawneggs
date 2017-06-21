@@ -38,7 +38,7 @@ for index, feather in ipairs(feathers) do
 	antum.convertItemToAlias(feather, 'antum:feather')
 end
 
-minetest.register_craftitem('antum:feather', {
+minetest.register_craftitem(':antum:feather', {
 	description = 'Feather',
 	inventory_image = 'antum_feather_white.png',
 })
@@ -59,7 +59,7 @@ for I in pairs(depends) do
 end
 
 
-minetest.register_craftitem('antum:bottled_water', {
+minetest.register_craftitem(':antum:bottled_water', {
 	description = 'A bottle of water',
 	inventory_image = 'bottled_water.png',
 })
