@@ -240,3 +240,24 @@ function antum.convertItemToAlias(item_name, alias_of)
 	minetest.unregister_item(item_name)
 	minetest.register_alias(item_name, alias_of)
 end
+
+
+--[[
+  Changes object description.
+  
+  @param item_name
+    Name of item to be altered
+  @param description
+    New string description value
+]]
+function antum.overrideItemDescription(item_name, description)
+	-- Original item definition
+	local item = antum.getItem(item_name)
+	-- Change description
+	item.description = description
+	
+	-- Unregister original item
+	minetest.unregister_item(item.name)
+	
+	minetest.register_craftitem(':' .. item.name, item)
+end
