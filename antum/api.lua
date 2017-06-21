@@ -175,6 +175,23 @@ end
 
 
 --[[
+  Retrieves an item from registered items using name string.
+  
+  @param item_name
+    Item name string to search for
+  @return
+    Item object with name matching 'item_name' parameter
+]]
+function antum.getItem(item_name)
+	for index in pairs(minetest.registered_items) do
+		if minetest.registered_items[index].name == item_name then
+			return minetest.registered_items[index]
+		end
+	end
+end
+
+
+--[[
   Retrieves a list of items containing a string.
   
   @param substring
