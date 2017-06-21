@@ -185,6 +185,8 @@ end
     List of item names matching 'substring'
 ]]--
 function antum.getItemNames(substring, case_sensitive)
+	antum.logAction('Checking registered items for "' .. substring .. '" in item name ...')
+	
 	-- Convert to lowercase
 	if not case_sensitive then
 		substring = string.lower(substring)
@@ -192,8 +194,8 @@ function antum.getItemNames(substring, case_sensitive)
 	
 	local item_names = {}
 	
-	for index, item in minetest.registered_items do
-		local item_name = item.name
+	for index in pairs(minetest.registered_items) do
+		local item_name = minetest.registered_items[index].name
 		if not case_sensitive then
 			item_name = string.lower(item_name)
 		end
