@@ -208,3 +208,18 @@ function antum.getItemNames(substring, case_sensitive)
 	
 	return item_names
 end
+
+
+--[[
+  Un-registers an item & converts its name to an alias.
+  
+  @param item_name
+    Name of the item to override
+  @param alias_of
+    Name of the item to be aliased
+]]
+function antum.convertItemToAlias(item_name, alias_of)
+	antum.logAction('Overridding "' .. item_name .. '" with "' .. alias_of .. '"')
+	minetest.unregister_item(item_name)
+	minetest.register_alias(item_name, alias_of)
+end
