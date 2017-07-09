@@ -29,7 +29,11 @@
 local S
 if minetest.global_exists("intllib") then
 	dofile(minetest.get_modpath("intllib").."/intllib.lua")
-	S = intllib.Getter("mobs")
+	if intllib.make_gettext_pair then
+		S = intllib.make_gettext_pair("mobs")
+	else
+		S = intllib.Getter("mobs")
+	end
 else
 	S = function ( s ) return s end
 end
