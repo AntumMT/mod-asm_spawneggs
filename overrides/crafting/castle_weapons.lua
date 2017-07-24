@@ -33,7 +33,7 @@ if antum.dependsSatisfied({'throwing', 'antum_core'}) then
 	-- TODO: Possible alternate solutions:
 	--   * Allow 'throwing:arrow' to be used as ammo for 'castle_weapons:crossbow'
 	
-	-- FIXME: Cannot use 'antum.overrideCraftOutput' because 'minetest.clear_craft' does not allow
+	-- FIXME: Cannot use 'antum.overrideCraftOutput' because 'core.clear_craft' does not allow
 	--        clearing craft by output with quantity. E.g., 'castle_weapons:crossbow_bolt 6'.
 	--  - Solution 1: Parse whitespace in 'output'
 	antum.clearCraftOutput('castle_weapons:crossbow_bolt')
