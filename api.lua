@@ -51,22 +51,22 @@ end
 --- Registers new egg in game.
 --
 --  @function asm.registerEgg
---  @param eggdef `EggDef` table.
-asm.registerEgg = function(eggdef)
-	local img = "spawneggs_" .. eggdef.name .. ".png"
-	if eggdef.inventory_image then
-		img = eggdef.inventory_image
+--  @param def `EggDef` table.
+asm.registerEgg = function(def)
+	local img = "spawneggs_" .. def.name .. ".png"
+	if def.inventory_image then
+		img = def.inventory_image
 	end
 
-	core.register_craftitem(":spawneggs:" .. eggdef.name, {
-		description = eggdef.name:gsub("^%l", string.upper) .. " Spawn Egg",
+	core.register_craftitem(":spawneggs:" .. def.name, {
+		description = def.name:gsub("^%l", string.upper) .. " Spawn Egg",
 		inventory_image = img,
 
 		on_place = function(itemstack, placer, target)
 			if target.type == "node" then
 				local pos = target.above
 				pos.y = pos.y + 1
-				local ref = core.add_entity(pos, eggdef.spawn)
+				local ref = core.add_entity(pos, def.spawn)
 				if ref and placer:is_player() then
 					local entity = ref:get_luaentity()
 					-- set owner
