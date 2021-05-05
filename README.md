@@ -1,4 +1,4 @@
-## Another Spawneggs Mod (***asm***) [Minetest][]
+## Another Spawneggs Mod (***asm_spawneggs***) [Minetest][]
 
 
 ---
