@@ -24,7 +24,7 @@ Mod for adding entity spawning eggs to game.
 - Required:
   - none
 - Optional:
-  - [mobs][mobs_redo] (adds craft recipe using mobs:egg)
+  - none
 
 
 ---
@@ -35,8 +35,6 @@ Mod for adding entity spawning eggs to game.
 
 
 [Minetest]: http://www.minetest.net/
-
-[mobs_redo]: https://forum.minetest.net/viewtopic.php?t=9917
 
 [img.egg_white]: https://openclipart.org/detail/6695/white-egg
 [img.egg_black]: https://openclipart.org/detail/170074/huevo-negro-black-egg

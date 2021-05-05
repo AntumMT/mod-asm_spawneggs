@@ -29,13 +29,3 @@ core.register_craftitem(":spawneggs:egg", {
 	description = "Spawning Egg",
 	inventory_image = "spawneggs_egg.png",
 }
-
-if core.registered_items["mobs:egg"] then
-	core.register_craft({
-		output = "asm:egg",
-		recipe = {
-			{"mobs:egg", "mobs:egg"},
-			{"mobs:egg", "mobs:egg"},
-		},
-	})
-end
