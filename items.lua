@@ -28,4 +28,4 @@
 core.register_craftitem(":spawneggs:egg", {
 	description = "Spawning Egg",
 	inventory_image = "spawneggs_egg.png",
-}
+})

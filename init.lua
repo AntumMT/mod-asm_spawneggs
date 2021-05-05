@@ -38,7 +38,7 @@ asm.log = function(lvl, msg)
 	if lvl then
 		core.log(lvl, "[" .. asm.modname .. "] " .. msg)
 	else
-		core.log("[" ams.modname .. "] " .. msg)
+		core.log("[" .. ams.modname .. "] " .. msg)
 	end
 end
 

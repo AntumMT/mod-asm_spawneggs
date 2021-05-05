@@ -31,10 +31,10 @@
 
 --- Adds a craft recipe for an egg.
 --
---  @function as.addEggRecipe
+--  @function asm.addEggRecipe
 --  @param name Name of spawnegg that will be created from recipe.
 --  @param ingredients Items used for recipe in addition to `spawneggs:egg`. Can be string or list.
-asm.addEggRecipe = function(name, spawn, ingredients)
+asm.addEggRecipe = function(name, ingredients)
 	if type(ingredients) == "string" then
 		ingredients = {ingredients,}
 	end
@@ -58,7 +58,7 @@ asm.registerEgg = function(def)
 		img = def.inventory_image
 	end
 
-	core.register_craftitem(":spawneggs:" .. def.name, {
+	core.register_craftitem(":spawneggs:" .. def.name:lower(), {
 		description = def.name:gsub("^%l", string.upper) .. " Spawn Egg",
 		inventory_image = img,
 
@@ -81,10 +81,12 @@ asm.registerEgg = function(def)
 		end
 	})
 
-	asm.addEggRecipe(name, spawn, ingredients)
+	if def.ingredients then
+		asm.addEggRecipe(def.name:lower(), def.ingredients)
+	end
 
 	-- DEBUG
-	asm.log("action", "Registered spawnegg for " .. spawn)
+	asm.log("action", "Registered spawnegg for " .. def.spawn)
 end
 
 --- Alias for `asm.registerEgg`.
@@ -99,3 +101,4 @@ asm.addEgg = asm.registerEgg
 --  @field name Human readable name.
 --  @field inventory_image Image displayed in inventory.
 --  @field spawn Entity that will be spawned from egg.
+--  @field ingredients Ingredients to us, in addition to `spawneggs:egg`, to register craft recipe (optional).
