@@ -15,7 +15,7 @@ License: [MIT](LICENSE.txt)
 The code for the spawneggs is based on [Rui's creeper mod][creeper] ([WTFPL][lic.creeper]). Anything else is licensed under the MIT License
 
 #### Texture licensing
-* egg.png, spawneggs_chicken.png, & spawneggs_mese.png
+* spawneggs_egg.png, spawneggs_chicken.png, & spawneggs_mese.png
 	* [CC0][lic.cc0]
 	* Based on ["white egg" by dStulle][img.egg_white]
 * spawneggs_oerrki.png
