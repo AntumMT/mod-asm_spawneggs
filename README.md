@@ -5,7 +5,7 @@
 
 Mod for adding entity spawning eggs to game with a very simple application. It is used only for creating new "eggs" that will spawn a specified entity when used by a player.
 
-There are two function: *<span style="color:darkgreen;">asm.addEgg</span>* & *<span style="color:darkgreen;">asm.addEggRecipe</span>* (see: [API][api])
+There are two function: *<span style="color:darkgreen;">asm.registerEgg</span>* & *<span style="color:darkgreen;">asm.registerEggRecipe</span>* (see: [API][api])
 
 ---
 ### Licensing:
