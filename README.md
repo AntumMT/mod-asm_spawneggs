@@ -3,7 +3,9 @@
 ---
 ### Description:
 
-Mod for adding entity spawning eggs to game.
+Mod for adding entity spawning eggs to game with a very simple application. It is used only for creating new "eggs" that will spawn a specified entity when used by a player.
+
+There are two function: *<span style="color:darkgreen;">asm.addEgg</span>* & *<span style="color:darkgreen;">asm.addEggRecipe</span>* (see: [API][api])
 
 ---
 ### Licensing:
@@ -31,7 +33,7 @@ Mod for adding entity spawning eggs to game.
 ### Links:
 
 - [Git repo](https://github.com/AntumMT/mod-asm_spawneggs)
-- [API](https://antummt.github.io/mod-asm_spawneggs/docs/api.html)
+- [API][api]
 
 
 [Minetest]: http://www.minetest.net/
@@ -41,3 +43,5 @@ Mod for adding entity spawning eggs to game.
 
 [lic.cc0]: https://creativecommons.org/publicdomain/zero/1.0/legalcode
 [lic.creeper]: https://github.com/Rui-Minetest/creeper/blob/master/LICENSE.md
+
+[api]: https://antummt.github.io/mod-asm_spawneggs/docs/api.html
