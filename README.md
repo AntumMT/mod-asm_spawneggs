@@ -31,7 +31,7 @@ Mod for adding entity spawning eggs to game.
 ### Links:
 
 - [Git repo](https://github.com/AntumMT/mod-asm_spawneggs)
-- [API](https://antummt.github.io/mod-asm_spawneggs/api.html)
+- [API](https://antummt.github.io/mod-asm_spawneggs/docs/api.html)
 
 
 [Minetest]: http://www.minetest.net/
