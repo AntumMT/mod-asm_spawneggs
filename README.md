@@ -1,18 +1,15 @@
-## Antum Spawneggs (***antum_spawneggs***) mod for [Minetest][]
+## Another Spawneggs Mod (***asm***) [Minetest][]
 
 
 ---
 ### **Description**
 
-Spawneggs mod for the Minetest sub-game [Antum][antum_game].
-
+Mod for adding entity spawning eggs to game.
 
 ---
 ### **Licensing**
 
 License: [MIT](LICENSE.txt)
-
-The code for the spawneggs is based on [Rui's creeper mod][creeper] ([WTFPL][lic.creeper]). Anything else is licensed under the MIT License
 
 #### Texture licensing
 * spawneggs_egg.png, spawneggs_chicken.png, & spawneggs_mese.png
@@ -27,31 +24,15 @@ The code for the spawneggs is based on [Rui's creeper mod][creeper] ([WTFPL][lic
 ### **Dependencies**
 
 **Required:**
-- **[antum_core][]**
-- **[spawneggs][]**
+- none
 
 **Optional:**
-- **animal_chicken** (part of [animals_modpack][])
-- **chicken** (part of [mob-engine][])
-- **default** (part of [minetest_game][])
-- **mobs** ([mobs_redo][])
-- **[mobs_monster][]**
-- **oerrki** (part of [mob-engine][])
-- **sheep** (part of [mob-engine][])
-- **wool** (part of [minetest_game][])
+- [mobs][mobs_redo] (adds craft recipe using mobs:egg)
 
 
 [Minetest]: http://www.minetest.net/
 
-[animals_modpack]: https://github.com/sapier/animals_modpack
-[antum_core]: https://github.com/AntumMT/mod-antum_core
-[antum_game]: https://github.com/AntumMT/game-antum
-[creeper]: https://forum.minetest.net/viewtopic.php?t=11891
-[minetest_game]: https://github.com/minetest/minetest_game
-[mob-engine]: https://github.com/minetest-mods/mob-engine
-[mobs_monster]: https://github.com/tenplus1/mobs_monster
 [mobs_redo]: https://forum.minetest.net/viewtopic.php?t=9917
-[spawneggs]: https://forum.minetest.net/viewtopic.php?t=6214
 
 [img.egg_white]: https://openclipart.org/detail/6695/white-egg
 [img.egg_black]: https://openclipart.org/detail/170074/huevo-negro-black-egg
