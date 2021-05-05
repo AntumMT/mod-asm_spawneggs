@@ -31,10 +31,12 @@
 
 --- Adds a craft recipe for an egg.
 --
---  @function asm.addEggRecipe
+--  Alias: *asm.addEggRecipe*
+--
+--  @function asm.registerEggRecipe
 --  @param name Name of spawnegg that will be created from recipe.
 --  @param ingredients Items used for recipe in addition to `spawneggs:egg`. Can be string or list.
-asm.addEggRecipe = function(name, ingredients)
+asm.registerEggRecipe = function(name, ingredients)
 	if type(ingredients) == "string" then
 		ingredients = {ingredients,}
 	end
@@ -47,8 +49,13 @@ asm.addEggRecipe = function(name, ingredients)
 	})
 end
 
+-- Alias for `asm.registerEggRecipe`.
+asm.addEggRecipe = asm.registerEggRecipe
+
 
 --- Registers new egg in game.
+--
+--  Alias: *asm.addEgg*
 --
 --  @function asm.registerEgg
 --  @param def `EggDef` table.
@@ -82,16 +89,14 @@ asm.registerEgg = function(def)
 	})
 
 	if def.ingredients then
-		asm.addEggRecipe(def.name:lower(), def.ingredients)
+		asm.registerEggRecipe(def.name:lower(), def.ingredients)
 	end
 
 	-- DEBUG
 	asm.log("action", "Registered spawnegg for " .. def.spawn)
 end
 
---- Alias for `asm.registerEgg`.
---
---  @function asm.addEgg
+-- Alias for `asm.registerEgg`.
 asm.addEgg = asm.registerEgg
 
 
