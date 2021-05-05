@@ -1,33 +1,37 @@
 ## Another Spawneggs Mod (***asm_spawneggs***) [Minetest][]
 
-
 ---
-### **Description**
+### Description:
 
 Mod for adding entity spawning eggs to game.
 
 ---
-### **Licensing**
+### Licensing:
 
-License: [MIT](LICENSE.txt)
-
-#### Texture licensing
-* spawneggs_egg.png, spawneggs_chicken.png, & spawneggs_mese.png
-	* [CC0][lic.cc0]
-	* Based on ["white egg" by dStulle][img.egg_white]
-* spawneggs_oerrki.png
-	* [CC0][lic.cc0]
-	* Based on ["Huevo negro. Black egg" by mediobit][img.egg_black]
+- Code: [MIT](LICENSE.txt)
+- Textures:
+  - spawneggs_egg.png, spawneggs_chicken.png, & spawneggs_mese.png
+    - [CC0][lic.cc0]
+    - Based on ["white egg" by dStulle][img.egg_white]
+  - spawneggs_oerrki.png
+    - [CC0][lic.cc0]
+    - Based on ["Huevo negro. Black egg" by mediobit][img.egg_black]
 
 
 ---
-### **Dependencies**
+### Dependencies:
 
-**Required:**
-- none
+- Required:
+  - none
+- Optional:
+  - [mobs][mobs_redo] (adds craft recipe using mobs:egg)
 
-**Optional:**
-- [mobs][mobs_redo] (adds craft recipe using mobs:egg)
+
+---
+### Links:
+
+- [Git repo](https://github.com/AntumMT/mod-asm_spawneggs)
+- [API](https://antummt.github.io/mod-asm_spawneggs/api.html)
 
 
 [Minetest]: http://www.minetest.net/
