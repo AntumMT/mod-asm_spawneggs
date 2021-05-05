@@ -26,7 +26,6 @@
 
 
 asm = {}
-
 asm.modname = core.get_current_modname()
 asm.modpath = core.get_modpath(asm.modname)
 
@@ -42,12 +41,6 @@ asm.log = function(lvl, msg)
 		core.log("[" ams.modname .. "] " .. msg)
 	end
 end
-
-if core.global_exists("spawneggs") then
-	asm.log("warning", "Overwriting \"spawneggs\" global")
-end
-
-spawneggs = asm
 
 local scripts = {
 	"api",
