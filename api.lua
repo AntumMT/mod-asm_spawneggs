@@ -24,7 +24,16 @@
 
 --]]
 
+--- API
+--
+--  @module api.lua
 
+
+--- Adds a craft recipe for an egg.
+--
+--  @function as.addEggRecipe
+--  @param name Name of spawnegg that will be created from recipe.
+--  @param ingredients Items used for recipe in addition to `spawneggs:egg`. Can be string or list.
 asm.addEggRecipe = function(name, spawn, ingredients)
 	if type(ingredients) == "string" then
 		ingredients = {ingredients,}
@@ -39,7 +48,11 @@ asm.addEggRecipe = function(name, spawn, ingredients)
 end
 
 
-asm.addEgg = function(eggdef)
+--- Registers new egg in game.
+--
+--  @function asm.registerEgg
+--  @param eggdef `EggDef` table.
+asm.registerEgg = function(eggdef)
 	local img = "spawneggs_" .. eggdef.name .. ".png"
 	if eggdef.inventory_image then
 		img = eggdef.inventory_image
@@ -73,3 +86,16 @@ asm.addEgg = function(eggdef)
 	-- DEBUG
 	asm.log("action", "Registered spawnegg for " .. spawn)
 end
+
+--- Alias for `asm.registerEgg`.
+--
+--  @function asm.addEgg
+asm.addEgg = asm.registerEgg
+
+
+--- Egg definition table.
+--
+--  @table EggDef
+--  @field name Human readable name.
+--  @field inventory_image Image displayed in inventory.
+--  @field spawn Entity that will be spawned from egg.
