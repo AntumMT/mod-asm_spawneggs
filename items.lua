@@ -25,35 +25,17 @@
 --]]
 
 
-asm = {}
-
-asm.modname = core.get_current_modname()
-asm.modpath = core.get_modpath(asm.modname)
-
-asm.log = function(lvl, msg)
-	if not msg then
-		msg = lvl
-		lvl = nil
-	end
-	
-	if lvl then
-		core.log(lvl, "[" .. asm.modname .. "] " .. msg)
-	else
-		core.log("[" ams.modname .. "] " .. msg)
-	end
-end
-
-if core.global_exists("spawneggs") then
-	asm.log("warning", "Overwriting \"spawneggs\" global")
-end
-
-spawneggs = asm
-
-local scripts = {
-	"api",
-	"items",
+core.register_craftitem(":spawneggs:egg", {
+	description = "Spawning Egg",
+	inventory_image = "spawneggs_egg.png",
 }
 
-for _, script in ipairs(scripts) do
-	dofile(asm.modpath .. "/" .. script .. ".lua")
+if core.registered_items["mobs:egg"] then
+	core.register_craft({
+		output = "asm:egg",
+		recipe = {
+			{"mobs:egg", "mobs:egg"},
+			{"mobs:egg", "mobs:egg"},
+		},
+	})
 end

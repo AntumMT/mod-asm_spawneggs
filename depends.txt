@@ -1,10 +1,2 @@
-antum
-spawneggs
-animal_chicken?
-chicken?
-default?
 mobs?
-mobs_monster?
-oerrki?
-sheep?
-wool?
+spawneggs?
