@@ -2,6 +2,7 @@
 v1.2
 ----
 - added method to retrieve registered egg by entity name
+- added optional field "title" for EggDef
 
 v1.1
 ----
