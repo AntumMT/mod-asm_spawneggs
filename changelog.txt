@@ -1,17 +1,18 @@
 
-1.2
-- Added method to retrieve registered egg by entity name.
+v1.2
+----
+- added method to retrieve registered egg by entity name
 
+v1.1
+----
+- egg names are titleized & underscores are replaced with space
 
-1.1
-- Egg names are titleized & underscores are replaced with space.
+v1.0
+----
+- made independent of any other mods or games
+- renamed to "asm_spawneggs" (Another Spawneggs Mod)
+- added API reference
 
-
-1.0
-- Made independent of any other mods or games.
-- Renamed to "asm_spawneggs" (Another Spawneggs Mod).
-- Added API reference.
-
-
-0.1
-- Created mod for Antum game.
+v0.1
+----
+- created mod for Antum game
