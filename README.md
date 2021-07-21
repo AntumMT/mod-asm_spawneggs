@@ -34,7 +34,7 @@ There are two function: *<span style="color:darkgreen;">asm.registerEgg</span>* 
 
 - [Git repo](https://github.com/AntumMT/mod-asm_spawneggs)
 - [API][api]
-- [Changelog](CHANGES.txt)
+- [Changelog](changelog.txt)
 
 
 [Minetest]: http://www.minetest.net/
