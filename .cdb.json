@@ -1,0 +1,19 @@
+{
+	"type": "MOD",
+	"title": "Another Spawneggs Mod",
+	"name": "asm_spawneggs",
+	"short_description": "Spawneggs for adding entities to games.",
+	"dev_state": "MAINTENANCE_ONLY",
+	"ai_disclosure": "NONE",
+	"tags": ["mobs"],
+	"content_warnings": null,
+	"license": "MIT",
+	"media_license": "CC0-1.0",
+	"repo": "https://codeberg.org/AntumLuanti/mod-asm_spawneggs",
+	"website": null,
+	"issue_tracker": "https://codeberg.org/AntumLuanti/mod-asm_spawneggs/issues",
+	"forums": "26676",
+	"video_url": null,
+	"donate_url": null,
+	"translation_url": null
+}
