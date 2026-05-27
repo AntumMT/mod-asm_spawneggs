@@ -1,8 +1,8 @@
-## Another Spawneggs Mod (***asm_spawneggs***) [Minetest][]
+## Another Spawneggs Mod (***asm_spawneggs***)
 
 ### Description:
 
-Mod for adding entity spawning eggs to game with a very simple application. It is used only for creating new "eggs" that will spawn a specified entity when used by a player.
+[Luanti] mod for adding entity spawning eggs to game with a very simple application. It is used only for creating new "eggs" that will spawn a specified entity when used by a player.
 
 There are two function: *<span style="color:darkgreen;">asm.registerEgg</span>* & *<span style="color:darkgreen;">asm.registerEggRecipe</span>* (see: [API][api])
 
@@ -17,7 +17,6 @@ There are two function: *<span style="color:darkgreen;">asm.registerEgg</span>* 
     - [CC0][lic.cc0]
     - Based on ["Huevo negro. Black egg" by mediobit][img.egg_black]
 
-
 ### Dependencies:
 
 - Required:
@@ -27,15 +26,15 @@ There are two function: *<span style="color:darkgreen;">asm.registerEgg</span>* 
 
 ### Links:
 
-- [![ContendDB](https://content.minetest.net/packages/AntumDeluge/asm_spawneggs/shields/title/)](https://content.minetest.net/packages/AntumDeluge/asm_spawneggs/)
-- [Forum](https://forum.minetest.net/viewtopic.php?t=26676)
+- [![ContendDB](https://content.luanti.org/packages/AntumDeluge/asm_spawneggs/shields/title/)](https://content.luanti.org/packages/AntumDeluge/asm_spawneggs/)
+- [Forum](https://forum.luanti.org/viewtopic.php?t=26676)
 - [Git repo](https://github.com/AntumMT/mod-asm_spawneggs)
 - [Reference][api]
 - [Changelog](changelog.txt)
 - [TODO](TODO.txt)
 
 
-[Minetest]: http://www.minetest.net/
+[Luanti]: http://www.luanti.org/
 
 [img.egg_white]: https://openclipart.org/detail/6695/white-egg
 [img.egg_black]: https://openclipart.org/detail/170074/huevo-negro-black-egg
