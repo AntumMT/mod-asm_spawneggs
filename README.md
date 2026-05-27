@@ -28,7 +28,10 @@ There are two function: *<span style="color:darkgreen;">asm.registerEgg</span>* 
 
 - [![ContendDB](https://content.luanti.org/packages/AntumDeluge/asm_spawneggs/shields/title/)](https://content.luanti.org/packages/AntumDeluge/asm_spawneggs/)
 - [Forum](https://forum.luanti.org/viewtopic.php?t=26676)
-- [Git repo](https://github.com/AntumMT/mod-asm_spawneggs)
+- Git repos:
+    - [Codeberg](https://codeberg.org/AntumLuanti/mod-asm_spawneggs)
+    - [GitHub](https://github.com/AntumMT/mod-asm_spawneggs)
+    - [GitLab](https://gitlab.com/AntumMT/mod-asm_spawneggs)
 - [Reference][api]
 - [Changelog](changelog.txt)
 - [TODO](TODO.txt)
